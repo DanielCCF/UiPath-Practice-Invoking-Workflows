@@ -1,0 +1,88 @@
+{
+  "name": "Solution",
+  "projectId": "99593ab0-b53d-4397-904f-e23f16925c42",
+  "description": "Solution for the Invoking Workflows challenge",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AutomatedTestCaseGenerator.Activities": "[1.0.0]",
+    "UiPath.Excel.Activities": "[2.22.0-preview]",
+    "UiPath.Mail.Activities": "[1.20.3]",
+    "UiPath.System.Activities": "[23.8.1-preview]",
+    "UiPath.Testing.Activities": "[23.8.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.6.2-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.8.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e2664871-3d26-42f2-947c-8cb84c070b10",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_001-ChooseNumberOfYears.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "72f72bec-6347-4dbc-b21f-6a1555099513",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_002-ChooseInitialDeposit.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "71fbeccd-93ac-47de-ad11-afb51d8764a5",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_003-CheckInterestRateCalculation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f5da2963-3410-453f-a365-fbcdd6725b53",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_004-CheckDisplayResult.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "281eb765-3613-491e-a44f-cb9edf3d0255",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
