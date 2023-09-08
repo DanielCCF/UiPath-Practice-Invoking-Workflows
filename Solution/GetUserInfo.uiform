@@ -1,0 +1,67 @@
+﻿{
+  "Metadata": {
+    "Id": "dfbcc23d-0583-47b8-a4c4-24c7e4df0909",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "GetUserInfo",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Interest rate calculator",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Deposit amount",
+        "tableView": true,
+        "key": "depositAmount",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Years of invesment",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "1 year",
+            "value": "1",
+            "shortcut": ""
+          },
+          {
+            "label": "3 years",
+            "value": "3",
+            "shortcut": ""
+          },
+          {
+            "label": "5 years",
+            "value": "5",
+            "shortcut": ""
+          }
+        ],
+        "key": "yearsOfInvesment",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

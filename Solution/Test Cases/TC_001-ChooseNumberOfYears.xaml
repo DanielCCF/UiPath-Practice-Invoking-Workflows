@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC_001_ChooseNumberOfYears" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1230,2542" sap2010:WorkflowViewState.IdRef="TestCase1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:sx="clr-namespace:System.Xml;assembly=System.Private.Xml" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_001_ChooseNumberOfYears" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="614,2025" sap2010:WorkflowViewState.IdRef="TestCase1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:sx="clr-namespace:System.Xml;assembly=System.Private.Xml" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
       <x:String>System.Activities</x:String>
@@ -99,7 +99,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Verify if the number of chose years is working" DisplayName="TC_001_ChooseNumberOfYears" sap:VirtualizedContainerService.HintSize="606,2477" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Verify if the number of chose years is working" DisplayName="TC_001_ChooseNumberOfYears" sap:VirtualizedContainerService.HintSize="620,1960" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="OutputExpression" />
       <Variable x:TypeArguments="x:Boolean" Name="ExpectedResult" />
@@ -117,7 +117,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Set all the variables required to run this test case" DisplayName="Given" sap:VirtualizedContainerService.HintSize="544,121" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Set all the variables required to run this test case" DisplayName="Given" sap:VirtualizedContainerService.HintSize="558,112" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -125,14 +125,14 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetCurrentJobInfo sap2010:Annotation.AnnotationText="Gets the current job info" DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="431,63" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobInfo]">
+      <ui:GetCurrentJobInfo sap2010:Annotation.AnnotationText="Gets the current job info" DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="450,56" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobInfo]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:GetCurrentJobInfo>
-      <Sequence sap2010:Annotation.AnnotationText="Get the arguments provided for this test case." DisplayName="Get Arguments" sap:VirtualizedContainerService.HintSize="431,121" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence sap2010:Annotation.AnnotationText="Get the arguments provided for this test case." DisplayName="Get Arguments" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <Sequence.Variables>
           <Variable x:TypeArguments="sx:XmlDocument" Default="[New XmlDocument]" Name="xmlDocument" />
           <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Matches" />
@@ -324,14 +324,14 @@
           </If.Else>
         </If>
       </Sequence>
-      <ui:LogMessage sap2010:Annotation.AnnotationText="AutomatedArgumentsLogString+&quot;Test case has started at:&quot;+Now.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestType:Functional&quot;+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;" DisplayName="Start message" sap:VirtualizedContainerService.HintSize="431,188" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[AutomatedArgumentsLogString+&quot;Test case has started at:&quot;+Now.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestType:Functional&quot;+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;]">
+      <ui:LogMessage sap2010:Annotation.AnnotationText="AutomatedArgumentsLogString+&quot;Test case has started at:&quot;+Now.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestType:Functional&quot;+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;" DisplayName="Start message" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[AutomatedArgumentsLogString+&quot;Test case has started at:&quot;+Now.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestType:Functional&quot;+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="RequiredExpression and StartTime" DisplayName="Assign Variables" sap:VirtualizedContainerService.HintSize="431,203" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="RequiredExpression and StartTime" DisplayName="Assign Variables" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -368,7 +368,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Launch the app&#xA;Pick all the possible years&#xA;Check if the year is being computed" DisplayName="When" sap:VirtualizedContainerService.HintSize="544,376" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="Launch the app&#xA;Pick all the possible years&#xA;Check if the year is being computed" DisplayName="When" sap:VirtualizedContainerService.HintSize="558,392" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -376,14 +376,14 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Test Step " sap:VirtualizedContainerService.HintSize="400,223" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence sap2010:Annotation.AnnotationText="Test Step " sap:VirtualizedContainerService.HintSize="496,224" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Boolean">[OutputExpression]</OutArgument>
           </Assign.To>
@@ -393,7 +393,7 @@
         </Assign>
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="All the selected years appearing accordingly" DisplayName="Then" sap:VirtualizedContainerService.HintSize="544,1747" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="All the selected years appearing accordingly" DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,1234" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="TestCaseResult" />
       </Sequence.Variables>
@@ -404,7 +404,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="Setting the end time." DisplayName="Set EndTime" sap:VirtualizedContainerService.HintSize="482,101" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap2010:Annotation.AnnotationText="Setting the end time." DisplayName="Set EndTime" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="s:DateTime">[EndTime]</OutArgument>
         </Assign.To>
@@ -417,7 +417,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" sap2010:Annotation.AnnotationText="Save the TestCaseResult boolean" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="482,662" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" OutputMessageFormat="[AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+ExpectedResult.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;]" Result="[TestCaseResult]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" sap2010:Annotation.AnnotationText="Save the TestCaseResult boolean" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="434,222" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" OutputMessageFormat="[AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+ExpectedResult.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;]" Result="[TestCaseResult]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
         <uta:VerifyExpressionWithOperator.FirstExpression>
           <InArgument x:TypeArguments="x:Boolean">[ExpectedResult]</InArgument>
         </uta:VerifyExpressionWithOperator.FirstExpression>
@@ -432,7 +432,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uta:VerifyExpressionWithOperator>
-      <ui:LogMessage sap2010:Annotation.AnnotationText="AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+RequiredExpression.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;" DisplayName="Log execution timespan" sap:VirtualizedContainerService.HintSize="482,293" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+ExpectedResult.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;]">
+      <ui:LogMessage sap2010:Annotation.AnnotationText="AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+RequiredExpression.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;" DisplayName="Log execution timespan" sap:VirtualizedContainerService.HintSize="434,333" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[AutomatedArgumentsLogString+&quot;Test case has finished executing at&quot;+&quot;:&quot;+EndTime.ToString+&quot;|&quot;+&quot;ProcessName:&quot;+JobInfo.ProcessName+&quot;|&quot;+&quot;TestCaseName:&quot;+JobInfo.WorkflowName+&quot;.xaml&quot;+&quot;|&quot;+&#xA;&quot;TestType:Functional|&quot;+&quot;TotalTestExecutionTime(seconds) for:&quot;+Math.Ceiling((EndTime-StartTime).Seconds).ToString+&quot;|&quot;+&quot;TestResult:&quot;+OutputExpression.ToString+&#xA;&quot;|&quot;+&quot;ExpectedResult:&quot;+ExpectedResult.ToString+&quot;|&quot;+&quot;FailedWorkflowName:&quot;+FailedWorkflowName+&quot;|&quot;+&quot;Error Message:&quot;+ErrorMessage+&quot;|&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -440,14 +440,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <If sap2010:Annotation.AnnotationText="If this test case fails, ensure to close all applications such that the next test case has a clean run. " Condition="[Not TestCaseResult]" DisplayName="Cleanup" sap:VirtualizedContainerService.HintSize="482,418" sap2010:WorkflowViewState.IdRef="If_3">
+      <If sap2010:Annotation.AnnotationText="If this test case fails, ensure to close all applications such that the next test case has a clean run. " Condition="[Not TestCaseResult]" DisplayName="Cleanup" sap:VirtualizedContainerService.HintSize="434,304" sap2010:WorkflowViewState.IdRef="If_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="Required Cleaup" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Required Cleaup" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -455,6 +455,9 @@
             </sap:WorkflowViewStateService.ViewState>
           </Sequence>
         </If.Then>
+        <If.Else>
+          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_14" />
+        </If.Else>
       </If>
     </Sequence>
   </Sequence>
